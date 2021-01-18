@@ -1,0 +1,494 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - yo
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - see you later alligator
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - perfect
+    - great
+    - amazing
+    
+- intent: thanks
+  examples: |
+    - gg
+    - thank you
+    - thanks
+    
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: inform
+  examples: |
+    - [Patna](location)
+    - [Ahmedabad](location)
+    - [Chennai](location)
+    - [Surat](location)
+    - [Jaipur](location)
+    - [Lucknow](location)
+    - [Nagpur](location)
+    - [Indore](location)
+    - [Sangrur](location)
+    - [New Delhi](location)
+    - [Delhi](location)
+    - [Chandigarh](location)
+    - [Kanpur](location)
+    - [Bangalore](location)
+    - [Ludhiana](location)
+    - [Patiala](location)
+    - [Bathinda](location)
+    - [Varanasi](location)
+    - [Darbhanga](location)
+    - [Muzaffarpur](location)
+    - [Shimla](location)
+    - [Manali](location)
+    - [Hydrabad](location)
+    - [Pune](location)
+    - [Mumbai](location)
+    - [Dhramshala](location)
+    - [Mirzapur](location)
+    - [Kolkata](location)
+    - [Gaya](location)
+    - [Srinagar](location)
+    - [Thane](location)
+    - [Visakhapatnam](location)
+    - [Pimpri-Chinchwad](location)
+    - [Vadodara](location)
+    - [Ghaziabad](location)
+    - [Agra](location)
+    - [Nashik](location)
+    - [Ranchi](location)
+    - [Faridabad](location)
+    - [Meerut](location)
+    - [Rajkot](location)
+    - [Kalyan-Dombivili](location)
+    - [Vasai-Vihar](location)
+    - [Aurangabad](location)
+    - [Dhanbad](location)
+    - [Amritsar](location)
+    - [Navi Mumbai](location)
+    - [Allahabad](location)
+    - [Howrah](location)
+    - [Gwalior](location)
+    - [Jabalpur](location)
+    - [Coimbatore](location)
+    - [Vijaywada](location)
+    - [Jodhpur](location)
+    - [Madurai](location)
+    - [Raipur](location)
+    - [Kota](location)
+    - [Guwahati](location)
+    - [Solapur](location)
+    - [Mysore](location)
+    - [Hubli-Dharwad](location)
+    - [Tiruchirappalli](location)
+    - [Bareilly](location)
+    - [Aligarh](location)
+    - [Tiruppur](location)
+    - [Gurgaon](location)
+    - [Moradabad](location)
+    - [Jalandhar](location)
+    - [Bhubaneswar](location)
+    - [Salem](location)
+    - [Warangal](location)
+    - [Mira-Bhayandar](location)
+    - [Jalgaon](location)
+    - [Guntur](location)
+    - [Thiruvananthapuram](location)
+    - [Bhiwandi](location)
+    - [Saharanpur](location)
+    - [Gorakhpur](location)
+    - [Bikaner](location)
+    - [Amravati](location)
+    - [Noida](location)
+    - [Jamshedpur](location)
+    - [Bhilai](location)
+    - [Cuttack](location)
+    - [Firazabad](location)
+    - [Kochi](location)
+    - [Nellore](location)
+    - [Bhavnagra](location)
+    - [Dehradun](location)
+    - [Durgapur](location)
+    - [Asansol](location)
+    - [Rourkela](location)
+    - [Nanded](location)
+    - [Kolhapur](location)
+    - [Ajmer](location)
+    - [Akola](location)
+    - [Gulbarga](location)
+    - [Jamnagar](location)
+    - [Ujjain](location)
+    - [Loni](location)
+    - [Siliguri](location)
+    - [Jhansi](location)
+    - [Ulhasnagar](location)
+    - [Jammu](location)
+    - [Sangli-Miraj](location)
+    - [Mangalore](location)
+    - [Erode](location)
+    - [Belgaum](location)
+    - [Ambattur](location)
+    - [Tirunelveli](location)
+    - [Malegaon](location)
+    - [Udaipur](location)
+    - [Kakinda](location)
+    - [Davanagere](location)
+    - [Kozhikode](location)
+    - [Maheshtala](location)
+    - [Rajpur Sonarpur](location)
+    - [Rajahmundry](location)
+    - [Bokaro](location)
+    - [South Dumdum](location)
+    - [Bellary](location)
+    - [Gopalpur](location)
+    - [Agartala](location)
+    - [Muzaffarnagar](location)
+    - [Bharpara](location)
+    - [Panihati](location)
+    - [Latur](location)
+    - [Dhule](location)
+    - [Tirupati](location)
+    - [Rohtak](location)
+    - [Sagar](location)
+    - [Korba](location)
+    - [Bhilwara](location)
+    - [Berhampur](location)
+    - [Ahmednagar](location)
+    - [Mathura](location)
+    - [Kollam](location)
+    - [Avadi](location)
+    - [Kadapa](location)
+    - [Kamarhati](location)
+    - [Sambalpur](location)
+    - [Bilaspur](location)
+    - [Shahjahapur](location)
+    - [Satara](location)
+    - [Bijapur](location)
+    - [Kurnool](location)
+    - [Rampur](location)
+    - [Shimoga](location)
+    - [Chandrapur](location)
+    - [Junagadh](location)
+    - [Thrissur](location)
+    - [Alwar](location)
+    - [Bardhaman](location)
+    - [Kulti](location)
+    - [Nizamabad](location)
+    - [Parbhani](location)
+    - [Tumkur](location)
+    - [Khammam](location)
+    - [Ozhukarai](location)
+    - [Bihar Sharif](location)
+    - [Panipat](location)
+    - [Bally](location)
+    - [Aizawal](location)
+    - [Dewas](location)
+    - [Ichalkaranji](location)
+    - [Karnal](location)
+    - [Jalna](location)
+    - [Eluru](location)
+    - [Barasat](location)
+    - [Kirari Suleman Nagar](location)
+    - [Purnia](location)
+    - [Satna](location)
+    - [Mau](location)
+    - [Sonipat](location)
+    - [Farrukhabad](location)
+    - [Durg](location)
+    - [Imphal](location)
+    - [Ratlam](location)
+    - [Hapur](location)
+    - [Arrah](location)
+    - [Anantapur](location)
+    - [Karimnagar](location)
+    - [Etawah](location)
+    - [Ambarnath](location)
+    - [North Dumdum](location)
+    - [Bharatpur](location)
+    - [Begusarai](location)
+    - [Gandhidham](location)
+    - [Baranagar](location)
+    - [Tiruvottiyur](location)
+    - [Pondicherry](location)
+    - [Sikar](location)
+    - [Thoothukudi](location)
+    - [Rewa](location)
+    - [Raichur](location)
+    - [Pali](location)
+    - [Ramagundam](location)
+    - [Silchar](location)
+    - [Haridwar](location)
+    - [Vijayanagaram](location)
+    - [Tenali](location)
+    - [Nagercoil](location)
+    - [Sri Ganganagar](location)
+    - [Karawal Nagar](location)
+    - [Mango](location)
+    - [Thanjavur](location)
+    - [Bulandshahar](location)
+    - [Uluberia](location)
+    - [Katni](location)
+    - [Sambhal](location)
+    - [Singrauli](location)
+    - [Nadiad](location)
+    - [Secunderabad](location)
+    - [Naihati](location)
+    - [Yamunanagar](location)
+    - [Bidhannagar](location)
+    - [Pallavaram](location)
+    - [Bidar](location)
+    - [Munger](location)
+    - [Panchkula](location)
+    - [Barhanpur](location)
+    - [Raurkela Industrial Township](location)
+    - [Kharagpur](location)
+    - [Dindigul](location)
+    - [Gandhinagar](location)
+    - [Hospet](location)
+    - [Nangloi Jat](location)
+    - [Malda](location)
+    - [Ongole](location)
+    - [Deoghar](location)
+    - [Chapra](location)
+    - [Haldia](location)
+    - [Khandwa](location)
+    - [Nandyal](location)
+    - [Morena](location)
+    - [Amroha](location)
+    - [Anand](location)
+    - [Bhind](location)
+    - [Bhalswa Jahangir Pur](location)
+    - [Madhyamgram](location)
+    - [Bhiwani](location)
+    - [Berhampur](location)
+    - [Ambala](location)
+    - [Morbi](location)
+    - [Fatehpur](location)
+    - [Raebareli](location)
+    - [Khora](location)
+    - [Chittoor](location)
+    - [Bhusawal](location)
+    - [Orai](location)
+    - [Bahraich](location)
+    - [Phusro](location)
+    - [Vellore](location)
+    - [Mehsana](location)
+    - [Raiganj](location)
+    - [Sirsa](location)
+    - [Danapur](location)
+    - [Serampore](location)
+    - [Guna](location)
+    - [Jaunpur](location)
+    - [Panvel](location)
+    - [Shivpuri](location)
+    - [Surendranagar Dudhrej](location)
+    - [Unnao](location)
+    - [Chinsurah](location)
+    - [Allappuzha](location)
+    - [Kottayam](location)
+    - [Machilipatnam](location)
+    - [Adoni](location)
+    - [Udupi](location)
+    - [Katihar](location)
+    - [Proddatur](location)
+    - [Mahbubnagar](location)
+    - [Saharsa](location)
+    - [Dibrugarh](location)
+    - [Jorhat](location)
+    - [Hazaribagh](location)
+    - [Hindupur](location)
+    - [Nagaon](location)
+    - [Sasaram](location)
+    - [Hajipur](location)
+    - [Giridih](location)
+    - [Bhimavaram](location)
+    - [Kumbakonam](location)
+    - [Dehri](location)
+    - [Madanapalle](location)
+    - [Siwan](location)
+    - [Bettiah](location)
+    - [Ramgarh](location)
+    - [Tinsukia](location)
+    - [Guntakal](location)
+    - [Srikakulam](location)
+    - [Motihari](location)
+    - [Dharmavaram](location)
+    - [Medininagar](location)
+    - [Gudivada](location)
+    - [Phagwara](location)
+    - [Pudukkottai](location)
+    - [Hosur](location)
+    - [Narasaraopet](location)
+    - [Suryapet](location)
+    - [Miryalaguda](location)
+    - [Tadipatri](location)
+    - [Karaikudi](location)
+    - [Kishanganj](location)
+    - [Jamalpur](location)
+    - [Ballia](location)
+    - [Kavali](location)
+    - [Tadepalligudm](location)
+    - [Amaravati](location)
+    - [Buxar](location)
+    - [Tezpur](location)
+    - [Jehanabad](location)
+    - [Aurangabad](location)
+    - [Gangtok](location)
+    - [Bengaluru](location)
+    - [Port Blair](location)
+
+- intent: search_provider
+  examples: |
+    - I need a [hospital](facility_type)
+    - find me a nearby [hospital](facility_type) in [Patna](location)
+    - [hospital](facility_type) in [Varanasi](location)
+    - I need a [home health agency](facility_type)
+    - show me [hospitals](facility_type)
+    - find me a nearby [home health agency](facility_type)
+    - [home health agency](facility_type)
+    - find me a nearby [nursing home](facility_type)
+    - find me a nearby [nursing home](facility_type) my pin-code is [221004](location)
+    - show me [nursing home](facility_type)
+    - [nursing home](facility_type)
+    - find me a [nearby nursing home](facility_type) my pin code is [800030](location)
+    - i need a [hospital my zip](facility_type) code is [842004](location)
+    - my zip code is [221002](location) and i need a [nursing home](facility_type:nursing home)
+    - my zip code is [221002](location) and i need a [hospital](facility_type:hospital)
+    - my zip code is [140507](location) and i need a [home health agency](facility_type:home-healt-agency)
+    - i need a [nursing home](facility_type) at [140401](location)
+    - i need a [hospital](facility_type) at [141009](location)
+    - i need a [home health agency](facility_type:home-healt-agency) at [140507](location)
+    - i am in [Amritsar](location) and i need a [nursing home](facility_type)
+    - i am in [Patna](location) and i need a [hospital](facility_type)
+    - i am in [Patna](location) and i need a [home healt agency](facility_type:home-healt-agency)
+    - i need a [nursing home](facility_type:nursing home) in [Noida](location)
+    - i need a [hospital](facility_type:hospital) in [Varanasi](location)
+    - i need a [home health agency](facility_type:home-healt-agency) in [Hyderabad](location]
+    - show me [nursing home](facility_type) in [Mumbai](location)
+    - show me [hospital](facility_type:hospital) in [Pune](location)
+    - show me [home health agency](facility_type:home-healt-agency) in [Thane](location)
+    - find me a nearby [home health agency](facility_type) in [Indore](location)
+    - hi i am in [Aizawl](location) i need a [nursing home](facility_type:nursing home)
+    - hi i am in [Chennai](location) i need a [hospital](facility_type:hospital)
+    - hi i am in [Kanyakumari](location) i need a [home health agency](facility_type:home-healt-agency)
+    - hi i am in [Salem](location) i need a [nursing home](facility_type:nursing home)
+    - hi i am in [Chennai](location) i need a [hospital](facility_type:hospital)
+    - hi i am in [Chennai](location) i need a [home health agency](facility_type:home-healt-agency)
+    - hi i am in [Delhi](location) i need a [nursing home](facility_type:nursing home)
+    - hi i am in [Delhi] i need a [hospital](facility_type:hospital)
+    - hi i am in [Ambala] i need a [home health agency](facility_type:home-healt-agency)
+    - hello i am in [Sonipat] i need a [nursing home](facility_type:nursing home)
+    - hello i am in [Srinagar](location) i need a [hospital](facility_type:hospital)
+    - hello i am in [Kolkata] i need a [home health agency](facility_type:home-healt-agency)
+    - hello i am in [Pune] i need a [nursing home](facility_type:nursing home)
+    - hello i am in [Kolkata](location) i need a [hospital](facility_type:hospital)
+    - hello i am in [Mumbai] i need a [home health agency](facility_type:home-healt-agency)
+    - hello i am in [Kolkata](location) i need a [nursing home](facility_type:nursing home)
+    - Good morning i am in [Port Blair](location) i need a [home health agency](facility_type:home-healt-agency)
+    - Good morning i am in [Varanasi](location) i need a [nursing home](facility_type:nursing home)
+    - Good morning i am in [Patna](location) i need a [hospital](facility_type:hospital)
+    - Good morning i am in [Patiala](location) i need a [home health agency](location)
+    - Hello again i need a [nursing home](facility_type:nursing home) in [Chennai](location)
+    - Hello again i need a [hospital](facility_type:hospital) in [Agartala]
+    - Hello again i need a [home health agency](facility_type:home-healt-agency) in [Langol](location)
+    - Good morning i need a [nursing home](facility_type:nursing home) in [Bengaluru](location)
+    - Good morning i need a [hospital](facility_type:hospital) in [Bengaluru](location)
+    - Good morning i need a [home health agency](facility_type:home-healt-agency) in [Bengaluru](location)
+    - Can you tell me a [nursing home](facility_type:nursing home) in [Patna](location)?
+- synonym: hospital
+  examples: |
+    - hospital
+    - hospitals
+- synonym: home-healt-agency
+  examples: |
+    - home health agency
+    - home health agencies
+- synonym: nursing home
+  examples: |
+    - nursing home
+    - nursing homes
+- regex: location
+  examples: |
+    - [0-9]{6}
+    

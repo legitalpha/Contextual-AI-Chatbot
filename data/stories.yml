@@ -1,0 +1,57 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: search hospital 1
+  steps:
+  - intent: greet
+  - action: utter_how_can_i_help
+  - intent: search_provider
+    entities:
+    - facility_type: "hospital"
+    - location: "Varanasi"
+  - action: action_facility_search
+  - intent: thanks
+  - action: utter_goodbye
+  
+- story: search hospital + location 1
+  steps:
+  - intent: greet
+  - action: utter_how_can_i_help
+  - intent: search_provider
+    entities:
+    - facility_type: "hospital"
+  - action: utter_ask_location
+  - intent: inform
+    entities:
+    - location: "Patna"
+  - action: action_facility_search
+  - intent: thanks
+  - action: utter_goodbye
+  
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

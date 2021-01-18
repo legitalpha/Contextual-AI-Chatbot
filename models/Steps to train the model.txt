@@ -1,0 +1,4 @@
+All the necessary files are already uploaded.
+First activate the anaconda enviornment using the command "conda activate env" on anaconda promt.
+Then change the directory.
+At last, just enter a command "rasa train" to train the model.
